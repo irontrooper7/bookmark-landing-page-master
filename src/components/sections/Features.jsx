@@ -22,7 +22,6 @@ const data = [
 ]
 
 export default function Features() {
-	
 	return (
 		<section id="features" className="hero is-medium">
 			<div className="hero-body">

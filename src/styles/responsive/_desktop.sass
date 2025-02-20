@@ -18,6 +18,15 @@
 		font-size: 19.2px
 	p
 		font-size: 18px
+	// helpers
+	.card-container
+		.columns
+			.column
+				transform: translateY(30px)
+				&:first-child
+					transform: translateY(0px)
+				&:last-child
+					transform: translateY(60px)
 	// base
 	@include base-desktop
 	// components
