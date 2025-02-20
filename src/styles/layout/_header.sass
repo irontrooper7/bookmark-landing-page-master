@@ -1,0 +1,78 @@
+@use '../base/_colors' as *
+
+header
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+	.navbar
+		background: none
+		&.is-active
+			background: $Very_Dark_Blue
+			.navbar-brand
+				.navbar-burger
+					span
+						background: $White
+		.navbar-brand
+			border: none
+			padding: 1rem 30px
+		.navbar-menu
+			background: $Very_Dark_Blue
+			min-height: calc(100vh - 73px)
+			padding: 1rem 30px 2rem
+			&.is-active
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+			.navbar-start
+				.navbar-item
+					border-top: 1px solid $Grayish_Blue
+					color: $White
+					font-size: 18px
+					text-align: center
+					text-transform: uppercase
+					padding: 1rem 0px
+					.button
+						margin: 1rem 0px 0px
+						&.is-link
+							background: none
+							border: 2px solid $White
+							color: $White
+							font-size: 18px
+							width: 100%
+							text-transform: uppercase
+		.navbar-item
+			&:hover
+				background: none
+
+@mixin header-desktop
+	header
+		.navbar
+			padding: 1.5rem 0px 0px
+			.navbar-menu
+				background: none
+				justify-content: flex-end
+				min-height: inherit
+				padding: 0px
+				.navbar-start
+					margin-inline-end: 0
+					.navbar-item
+						border-top: none
+						color: $Grayish_Blue
+						font-size: 14px
+						padding: 0.5rem 0.75rem
+						&:hover
+							color: $Soft_Red
+						.button
+							margin: 0px
+							&.is-link
+								background: $Soft_Red
+								border: 2px solid $Soft_Red
+								color: $White
+								font-size: 14px
+								width: 100px
+								&:hover
+									background: $White
+									color: $Soft_Red
+				.navbar-end
+					display: none
