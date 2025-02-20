@@ -1,3 +1,4 @@
+@use '../base/_base' as *
 @use '../layout/header' as *
 	
 @media only screen and (min-width: 1024px)
@@ -16,5 +17,7 @@
 		font-size: 19.2px
 	p
 		font-size: 18px
+	//base
+	@include base-desktop
 	// layout
 	@include header-desktop
