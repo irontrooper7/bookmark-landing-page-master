@@ -1,0 +1,59 @@
+@use '../base/_colors' as *
+
+.tabs
+	ul
+		display: block
+		margin: auto
+		max-width: 425px
+		li
+			padding: 16px 30px
+			border-bottom: 1px solid $Grayish_Blue
+			position: relative
+			&.is-active
+				&::after
+					width: 100%
+				a
+					color: $Very_Dark_Blue
+			&:first-child
+				border-top: 1px solid $Grayish_Blue
+			&::after
+				background: $Soft_Red
+				content: ''
+				bottom: -1px
+				left: 50%
+				width: 0%
+				max-width: 100px
+				height: 5px
+				position: absolute
+				transition: all .25s
+				transform: translateX(-50%)
+			a
+				color: $Grayish_Blue
+				border-bottom: none !important
+				padding: 0px
+
+.tabs-content
+	display: none
+	max-width: 425px
+	margin: auto
+	&.is-active
+		display: block
+	.multimedia
+		margin: auto
+
+@mixin tabs-desktop
+	.tabs
+		ul
+			display: flex
+			max-width: inherit
+			margin: 0px
+			li
+				padding: 20px 50px
+				&:first-child
+					border-top: none
+				&::after
+					max-width: inherit
+	.tabs-content
+		min-height: 450px
+		margin: inherit
+		max-width: inherit
