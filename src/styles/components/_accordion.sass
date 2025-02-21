@@ -1,0 +1,25 @@
+@use '../base/_colors' as *
+
+.accordion
+	border-bottom: 1px solid $Grayish_Blue
+	button
+		padding: 1rem 0px
+		width: 100%
+		&:hover
+			p
+				color: $Soft_Red
+		.icon
+			color: $Soft_Blue
+			font-size: 40px
+			&.is-active
+				color: $Soft_Red
+				transform: rotate(180deg)
+
+.accordions
+	max-width: 599px
+	margin: auto
+
+@mixin accordion-desktop
+	.accordion
+		&:first-child
+			border-top: 1px solid $Grayish_Blue

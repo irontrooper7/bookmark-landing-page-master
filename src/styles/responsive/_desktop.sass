@@ -1,7 +1,8 @@
 @use '../base/_base' as *
+@use '../components/_accordion' as *
 @use '../components/_tabs' as *
 @use '../layout/header' as *
-	
+
 @media only screen and (min-width: 1024px)
 	// Base
 	h1
@@ -30,6 +31,7 @@
 	// base
 	@include base-desktop
 	// components
+	@include accordion-desktop
 	@include tabs-desktop
 	// layout
 	@include header-desktop
