@@ -1,5 +1,7 @@
 @use '../base/_base' as *
 @use '../components/_accordion' as *
+@use '../components/_card' as *
+@use '../components/_form' as *
 @use '../components/_tabs' as *
 @use '../layout/header' as *
 
@@ -19,19 +21,12 @@
 		font-size: 19.2px
 	p
 		font-size: 18px
-	// helpers
-	.card-container
-		.columns
-			.column
-				transform: translateY(30px)
-				&:first-child
-					transform: translateY(0px)
-				&:last-child
-					transform: translateY(60px)
 	// base
 	@include base-desktop
 	// components
 	@include accordion-desktop
+	@include card-desktop
+	@include form-desktop
 	@include tabs-desktop
 	// layout
 	@include header-desktop

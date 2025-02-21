@@ -1,0 +1,42 @@
+@use '../base/_colors' as *
+
+.form
+	max-width: 425px
+	margin: auto
+	.field
+		position: relative
+		.button
+			width: 100%
+			margin-top: 16px
+		.control
+			&.is-error
+				input
+					border: 2px solid $Soft_Red
+			input
+				margin: 0px
+		.help
+			background: $Soft_Red
+			border-bottom-left-radius: 10px
+			border-bottom-right-radius: 10px
+			color: $White
+			font-size: 10px
+			font-weight: 700
+			margin-top: -0.25rem
+			padding: 10px 16px
+
+@mixin form-desktop
+	.form
+		.field
+			display: flex
+			.control
+				width: 100%
+				margin: 0 16px 0 0
+				z-index: 1
+			.button
+				width: inherit
+				margin-top: 0px
+			.help
+				position: absolute
+				top: 100%
+				width: 100%
+				max-width: 301.88px

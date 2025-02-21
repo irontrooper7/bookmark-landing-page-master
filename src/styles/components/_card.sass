@@ -31,3 +31,14 @@
 	.columns
 		.column
 			margin: 0 0 30px
+
+
+@mixin card-desktop
+	.card-container
+		.columns
+			.column
+				transform: translateY(30px)
+				&:first-child
+					transform: translateY(0px)
+				&:last-child
+					transform: translateY(60px)

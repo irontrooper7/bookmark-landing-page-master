@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import Contact from "@/components/sections/Contact";
 import Download from "@/components/sections/Download";
 import Faqs from "@/components/sections/Faqs";
 import Features from "@/components/sections/Features";
@@ -11,6 +12,7 @@ export default function Home() {
 			<Features />
 			<Download />
 			<Faqs />
+			<Contact />
 		</Layout>
 	);
 }
