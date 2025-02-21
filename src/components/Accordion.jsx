@@ -11,6 +11,5 @@ export default function Accordion({ title, content, isActive, onClick }) {
 			</button>
 			{isActive && <div className="pb-5">{content}</div>}
 		</div>
-
 	)
 }

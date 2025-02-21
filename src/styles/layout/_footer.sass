@@ -1,0 +1,38 @@
+@use '../base/_colors' as *
+
+.footer
+	background: $Very_Dark_Blue
+	padding: 1.5rem 3rem
+	.navbar
+		background: none
+		.navbar-brand
+			.navbar-item
+				&:hover
+					background: none
+		.navbar-menu
+			display: block
+			background: none
+			box-shadow: none
+			.navbar-start
+				.navbar-item
+					color: $White
+					text-align: center
+					text-transform: uppercase
+					&:hover
+						background: none
+						color: $Soft_Red
+			.navbar-end
+				margin-top: 1.5rem
+				.navbar-item
+					.icon
+						color: $White
+						font-size: 24px
+						margin: 0px 16px
+						&:hover
+							color: $Soft_Red
+
+@mixin footer-desktop
+	.footer
+		.navbar
+			.navbar-menu
+				display: flex
